@@ -33,7 +33,7 @@ flightRoute.post("/flights", async (req, res) => {
 	
   try {
 	const {
-		airline,flightNo,departure,	arrival,departureTime,seats,price  } = req.body;
+		airline,flightNo,departure,	arrival,departureTime, arrivalTime,seats,price  } = req.body;
 	const flight = new FlightModel({
       airline,
       flightNo,
